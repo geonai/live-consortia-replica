@@ -1,12 +1,14 @@
 {
-  "name": "live-consorcios",
-  "version": "0.1.0",
+  "name": "vite-project",
   "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "build": "next build",
-    "dev": "next dev",
+    "dev": "vite dev",
+    "build": "tsc -b && vite build",
+    "build:dev": "vite build --mode development",
     "lint": "eslint .",
-    "start": "next start"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
